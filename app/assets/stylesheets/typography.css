@@ -1,0 +1,86 @@
+h1, h2, h3, h4, h5, h6{
+	font-family: "Oswald", "Arial";
+	line-height: 22px;
+  	color: #23acb9;
+	-webkit-transition: all .3s ease; 
+	-moz-transition: all .3s ease; 
+	transition: all .3s ease;
+}
+
+h1{
+  	font-size: 30px;
+  	font-weight: 400;
+}
+
+.page_name h1{
+	font-size:70px;
+  	color: #000;
+  	font-weight: bold;
+  	font-family: "Helvetica", "Arial";
+}
+
+#custom-subpage-description h5{
+	font-size: 14px;
+	color: #302f2f;
+	font-weight: 500;
+	float: right;
+	font-family: "Helvetica", "Arial";
+	position: relative;
+	top: 3px;
+}
+.services_rows .proj-item .title h6{
+	font-size: 14px;
+	color: #5B8189;
+	line-height: 18px;
+}
+h2 {
+	font-size: 23px;
+  	font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 18px;
+  font-weight: 100;
+}
+
+h4{
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+h5{
+	font-size: 16px;
+	font-weight: 100;
+}
+
+h6 {
+  	line-height: 9px;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+p{
+	color: #a2a5a5;
+    font-family: "Helvetica Neue", "Arial";
+    font-size: 13px;
+    line-height: 16px;
+    text-align: left;
+}
+
+a{
+	color: #79AF11;
+	font-family: "Helvetica", "Arial";
+    font-size: 13px;
+	text-decoration: none;
+    line-height: 20px;
+    -webkit-transition: all .3s ease; 
+	-moz-transition: all .3s ease; 
+	transition: all .3s ease;
+}
+
+a:hover{
+	color: #23ACB9;
+}

@@ -1,0 +1,147 @@
+#menu-div{
+	margin-top: 2px;
+}
+
+#menu-div ul{
+	z-index: 99999 !important;
+	float: right;
+}
+
+.jqueryslidemenu{
+font: 12px Verdana;
+background: none;
+width: 100%;
+}
+
+.jqueryslidemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.jqueryslidemenu > ul > li > ul{
+	margin-left: 3px !important;
+	border: 2px #EEE;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+font-family: "Oswald", "Arial";
+text-transform: uppercase;
+display: block;
+background: none; /*background of tabs (default state)*/
+color: #919B9D;
+margin: 8px 15px;
+padding-top: 3px;
+text-decoration: none;
+font-size: 14px;
+line-height: 18px;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+height: 15px;
+}
+
+.jqueryslidemenu .selected{
+	color: #87e4f5 !important;
+	background: url(<%= asset_path "selected_menu.jpg" %>  ) repeat-x center top;
+}
+
+.jqueryslidemenu ul li a:hover{
+	xbackground: url(<%= asset_path "points_t.png" %> ) repeat-x center top;
+	/*border-top: 2px solid #87e4f5;
+	color: #87e4f5;
+	font-size: 14px;
+	line-height: 18px;
+	height: 15px;
+	display: block;*/
+}
+
+.jqueryslidemenu ul li:last-child a{
+	margin-right: 0px;
+}
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited{
+color: white;
+
+}
+
+.jqueryslidemenu ul li a:selected{
+	color: #87e4f5;
+}
+
+.jqueryslidemenu ul li a:hover{
+/*tab link background during hover state*/
+	color: #3C97AB !important;
+}
+	
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+	position: absolute;
+	left: 0;
+	display: block;
+	visibility: hidden;
+	text-transform: none;
+	box-shadow: 0px 0px 3px #CCC ;
+	padding: 5px;
+	background: white;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	margin-left: 16px; 
+
+}
+
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+
+.jqueryslidemenu ul li ul li{
+	display: list-item;
+	float: none;
+	background:white ;
+	padding: 5px 0;
+}
+
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+	top: 0;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	-moz-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+	
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a{
+	font: normal 12px "Oswald";
+	text-transform: none;
+	color: #919B9D ; 
+	white-space: nowrap;
+	width: auto; /*width of sub menus*/
+	padding: 0 5px 10px 5px;
+	margin: 0;
+	background: none !important;
+	border-bottom: 1px dotted #e4e4e4 ;
+}
+
+.jqueryslidemenu > ul > li > ul > li:last-child > a, .jqueryslidemenu > ul > li:last-child > a{{
+	border-bottom: none !important;
+	margin-bottom: -5px !important;
+}
+
+.jqueryslidemenuz ul li ul li a:hover{ /*sub menus hover style*/
+color: #87E4F5 !important;
+cursor: pointer;
+background: none !important;
+}

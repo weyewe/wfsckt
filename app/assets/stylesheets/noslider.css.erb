@@ -1,0 +1,175 @@
+#noslider{
+	background: #fff;
+	min-height: 350px;
+	height: auto;
+	padding-bottom: 50px;
+	-moz-border-radius: 5px 5px 0 0;
+    -webkit-border: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 4px;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0px 0px 2px #CCC;
+}
+#noslider #slider_shadow_left{
+	position: absolute;
+	float:left;
+	width: 42px;
+	height: 377px;
+	left: -42px;
+	background: url(<%= asset_path "shadowleft.png" %> ) no-repeat;
+}
+#noslider #slider_shadow_right{
+	position: absolute;
+	float:right;
+	width: 42px;
+	height: 377px;
+	right: -42px;
+	background: url(<%= asset_path "shadowright.png" %> ) no-repeat;
+}
+#noslider .noslider-content{
+	position: relative;
+	top: 20px;
+	left: -20px;
+	height: 100%;
+}
+#noslider .noslider-content .title{
+	position: relative;
+	float: left;
+	width: auto;
+	left: 8px;
+	margin-bottom: 1px;
+}
+#noslider .noslider-content h4{
+	position: relative;
+	font-family: "Oswald", "Arial";
+}
+#noslider .noslider-content .divider-dots{
+	float:left;
+	height: 2px;
+	border-bottom: 1px dotted #ccc;
+	position: relative;
+	left: 8px;
+	width: 920px;
+	top: 7px;
+}
+#filterable{
+	float: right;
+    position: relative;
+    right: 31px;
+    top: 4px;
+    width: auto;
+}
+#filterable li{
+	position: relative;
+	float: left;
+	text-align: right;
+	margin-left: 20px;
+	color: #a9a9a9;
+}
+#filterable li a{
+	color: #a9a9a9;
+}
+#filterable li a:hover{
+	color: #23ACB9;
+	text-decoration: none;
+}
+#filterable li.current{
+	color:#23ACB9;
+}
+.noslidertxt{
+	position: relative;
+	margin: 30px 0 30px 20px;
+	padding-bottom: 40px;
+	background: url( <%= asset_path "recent_worksborder.png" %> ) repeat-x left bottom;
+	float: left;
+}
+.noslidertxt h3{
+	font-family: "Oswald", "Helvetica", "Arial";
+	font-size: 18px;
+	color: #23ACB9;
+	width: 747px;
+	position: relative;
+	float: left;
+	text-align: left;
+}
+.noslidertxt h3 span{
+	font-family: "Helvetica", "Arial";
+	font-size: 14px;
+	color: #c3c3c3;
+	width: 765px;
+	position: relative;
+	float: left;
+	text-align: left;
+	padding-top: 6px;
+}
+.noslidertxt a{
+	position: relative;
+	float: left;
+	right: 10px;
+	top: 3px;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #308d9e;
+	padding: 10px 32px 10px 32px;
+}
+#recent-works-noslider{
+	height: 20px;
+	padding-bottom: 20px;
+	margin-top: 5px;
+	position: relative;
+	float: left;
+	left: 12px;
+}
+
+#recent-works-noslider .divider-description{
+	color: #23ACB9;
+	float: left;
+	font-family: "Oswald", "Arial";
+	font-size: 14px;
+	font-weight: 100;
+	height: auto;
+	left: 18px;
+	line-height: 4px;
+	margin: 0;
+	padding-bottom: 30px;
+	position: relative;
+	text-align: left;
+	text-transform: capitalize;
+}
+.divider-description a{
+	color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 0;
+    font-family: "Oswald", "Arial";
+}
+.divider-description a:hover{
+	color: #23ACB9;
+}
+#recent-works-noslider .points_left{
+	width: 352px;
+	position: relative;
+	float: left;
+	background: url(<%= asset_path "recent_worksborder.png" %> ) repeat-x;
+	height: 5px; 
+	margin:0; 
+	position: relative; 
+	top: 1px;
+}
+#recent-works-noslider .points_right{
+	width: 357px;
+	position: relative;
+	float: right;
+	background: url(<%= asset_path "recent_worksborder.png" %>) repeat-x;
+	height: 5px;
+	margin: 0;
+	position: relative;
+	top: 1px;
+	right: 45px;
+}
+
+
+
+
+
+

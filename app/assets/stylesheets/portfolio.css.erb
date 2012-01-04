@@ -1,0 +1,490 @@
+/*	
+-------------------------------------------
+	.PORTFOLIO
+-------------------------------------------
+*/
+#portfolio{
+	margin-bottom: 40px;
+	position: relative;
+	top: 10px;
+}
+.portfolio_types{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #b0b3b4;
+	padding: 20px 0px;
+}
+.portfolio_types a{
+	display: inline;
+	text-decoration: none;
+	color: #3291a0;
+}
+#portfolio #content .imac{
+	position: relative;
+	height: 528px;
+	background: url( <%= asset_path "icons/li_arrow_blue.png" %>  ) no-repeat;
+}
+#portfolio #content .imac-content{
+	position: absolute;
+	top: 65px;
+	left: 76px;
+	width: 471px;
+	height: 267px;
+	overflow: hidden;
+}
+#projectmoreinfo{
+	position: relative;
+	height: 100%;
+	margin-bottom: 60px;
+	float:left;
+	top: 10px;
+}
+
+#portfolio #content .imac .imac-reflex{
+	position: absolute;
+	top: 46px;
+	right: 54px;
+	width: 263px;
+	height: 352px;
+	pointer-events:none;
+	background: url( <%= asset_path "icons/li_arrow_blue.png" %>  );
+}
+
+#portfolio #desc_portfolio{
+	position: relative;
+	color: #ACA9A9;
+	margin-left: 26px;
+}
+
+#portfolio #desc_portfolio .dotted_hr{
+	height: 10px;
+	background: url( <%= asset_path "icons/li_arrow_blue.png" %>  ) top left repeat-x;
+}
+
+#portfolio #desc_portfolio .title{
+	font-family: "Oswald", "Arial";
+	font-size: 18px;
+	line-height: 18px;
+	color: #3c97ab;
+	padding-bottom: 20px;
+}
+
+#portfolio #desc_portfolio .description{
+	font-family: "Helvetica Neue", "Arial";
+	font-size: 12px;
+	line-height: 18px;
+	color: #a3abad;
+	padding-bottom: 50px;
+}
+
+#portfolio #desc_portfolio .link{
+	padding-bottom: 10px;
+	padding-top: 20px;
+	width: 100%;
+	position: relative;
+	float: left;
+	top: -55px;
+	text-align: left;
+	left: 0;
+}
+#portfolio #desc_portfolio .link a{
+	display: inline;
+	text-decoration: none;
+	font-family: "Helvetica Neue", "Arial";
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #71858e;
+	background: url( <%= asset_path "icons/li_arrow_blue.png" %> ) left center no-repeat;
+	padding-left: 25px;
+}
+#portfolio #desc_portfolio .link a:hover{
+	color: #23ACB9;
+	background: url( <%= asset_path "icons/li_arrow_blue.png" %> ) left center no-repeat;
+}
+
+#portfolio #desc_portfolio .navigation .prev_bt a, #portfolio #desc_portfolio .navigation .next_bt a{
+	width: 23px;
+	height: 21px;
+	float: left;
+	margin-top: 20px;
+}
+
+#portfolio #desc_portfolio .navigation .prev_bt a{
+	background: url(<%= asset_path "icons/li_arrow_blue.png" %>  );
+}
+
+#portfolio #desc_portfolio .navigation .next_bt a{
+	background: url(<%= asset_path "icons/li_arrow_blue.png" %>  );
+	margin-left: 5px;
+}
+#portfolio #desc_portfolio .cat{
+	color: #aca9a9;
+	font-size: 11px;
+	font-weight: 100;
+	font-family: "Helvetica", "Arial";
+	line-height: 13px;
+	margin-top: 20px;
+}
+#portfolio #desc_portfolio .category{
+	color: #23acb9;
+	font-size: 14px;
+	font-family: "Helvetica", "Arial";
+}
+.dotted_line{
+	border: 1px dotted red;
+}
+
+.noslider-topbar-1{
+	float: left;
+	position: relative;
+	left: 30px;
+}
+
+.noslider-topbar-2{
+	background: url(<%= asset_path "icons/li_arrow_blue.png" %> ) repeat-x;
+	height: 5px;
+	float: left;
+	position: relative;
+	top: 8px;
+	width: 40%;
+	left: 42px;
+}
+
+.noslider-topbar-3{
+	float: right;
+	margin-right: 22px;
+}
+
+.home_rows{
+	padding: 0 !important;
+}
+
+.splitter li{
+	float: left;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+	font-family: "Helvetica Neue", "Arial";
+}
+
+.splitter li a{
+	color: #c5c5c5;
+}
+
+.splitter li a:hover, .splitter li.selected-2 a, .splitter li.selected-1 a, .splitter li.active a{
+	color: #3c97ab;
+}
+
+.divider{
+	clear: both;
+}
+
+ul#list{margin-top:30px; margin-left: 10px;}
+
+#list li{
+	box-shadow: none;
+	position: relative;
+	padding: 0 !important;
+	xmargin: 0px 15px 0px 0px;
+}
+
+.thumb-proj .details-4col{
+	width: 190px;
+}
+
+.thumb-proj .details-4col .title{
+	float: none !important;
+	left: 0 !important;
+}
+
+#proj_navigation{
+	width: 125px;
+}
+
+#proj_navigation a{
+	color: #C5C5C5;
+	font-family: "Helvetica Neue", "Arial";
+}
+
+#proj_navigation a:hover{
+	color: #23ACB9;
+}
+
+.backthumbs{
+	margin-right: 7px;
+}
+
+/* 4Columns - Nivo */
+.vert_divider{
+	height: 20px;
+	border-left: 1px solid #d4d4d4;
+	margin-right: 7px;
+}
+
+.proj_nav .projectnav .css_prev{
+	width: 23px;
+	height: 21px;
+	display: block;
+	background: url(<%= asset_path "icons/li_arrow_blue.png" %> );
+	background-position: 0 0;
+	float: left;
+	margin-right: 1px;
+}
+
+.proj_nav .projectnav .css_next{
+	width: 23px;
+	height: 21px;
+	display: block;
+	background: url(<%= asset_path "icons/li_arrow_blue.png" %> );
+	background-position: 0 0;
+	float:left;
+}
+
+.proj_nav .projectnav .css_prev:hover{
+	opacity: 0.8;
+}
+
+.proj_nav .projectnav .css_next:hover{
+	opacity: 0.8;
+}
+
+.proj_nav .projectnav .css_prev2{
+	width: 23px;
+	height: 21px;
+	display: block;
+	background: url(<%= asset_path "icons/li_arrow_blue.png" %>  );
+	background-position: 0 0;
+	float: left;
+	margin-right: 1px;
+}
+
+.proj_nav .projectnav .css_next2{
+	width: 23px;
+	height: 21px;
+	display: block;
+	background: url(<%= asset_path "icons/li_arrow_blue.png" %>  );
+	background-position: 0 0;
+	float:left;
+}
+
+.openproject {
+     height: 100%;
+     position: relative;
+	margin-left: 20px;
+     width: 96%;
+     margin-bottom: 80px;
+}
+
+.openproject .project_content {
+     display: block;
+     clear: both;
+     height: auto;
+     left: 0pt;
+     position: relative;
+     top: 15px;
+     width: 92%;
+}
+
+.openproject .project_content .slideprojects {
+     position: relative;
+     float: left;
+     width: 890px;
+     background: url(<%= asset_path "icons/li_arrow_blue.png" %> ) repeat;
+     padding: 4px;
+     left: 9px;
+}
+
+.openproject .project_content .slideprojects .social {
+     float: left;
+     padding-top: 12px;
+     position: relative;
+}
+
+.openproject .project_content .slideprojects .social p {
+     color: #ACA9A9;
+     font-size: 11px;
+}
+
+.openproject .project_content .projectinfo {
+     float: left;
+	height: auto;
+	left: 10px;
+	margin: 0pt;
+	padding: 0pt;
+	position: relative;
+	top: 20px;
+	width: 900px;
+}
+.openproject .project_content .title {
+     float: left;
+     height: auto;
+     position: relative;
+     top: 0pt;
+     width: 100% !important;
+     padding-bottom: 20px;
+     margin-top: 10px;
+     left: 0 !important;
+}
+.openproject .project_content .link{
+	width: 30%;
+	position: relative;
+	float: left;
+	top: 5px;
+	text-align: right;
+	left: -162px;
+}
+.openproject .project_content .link a{
+	display: inline;
+	text-decoration: none;
+	font-family: "Helvetica Neue", "Arial";
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #71858e;
+	background: url(<%= asset_path "icons/li_arrow_blue.png" %> ) left center no-repeat;
+	padding-left: 25px;
+}
+.openproject .project_content .link a:hover{
+	color: #23ACB9;
+	background: url(<%= asset_path "icons/li_arrow_blue.png" %>  ) left center no-repeat;
+}
+
+.openproject .project_content .title .status {
+   position: relative;
+   top: 10px;
+   color: #333;
+}
+.openproject .project_content .title .status h6 {
+   position: relative;
+   line-height: 20px;
+   font-size: 12px;
+}
+.openproject .project_content .title .status p{
+   color: #ccc;
+}
+.openproject .project_content .title h2 {
+	font-family: "Oswald" !important;
+    font-weight: 400;
+    color: #3C97AB;
+    font-size: 30px;
+}
+
+.openproject .project_content .projectinfo .info{
+	position: relative;
+	margin-bottom: 10px;
+	top: 0;
+	width: 100%;
+}
+.openproject .project_content .projectinfo .info .col1{
+	position: relative;
+	float: left;
+	width: 445px;
+	margin-right: 30px;
+}
+.openproject .project_content .projectinfo .info .col2{
+	position: relative;
+	float: left;
+	width: 414px;
+}
+
+.openproject .project_content .projectinfo .info h6 {
+	font-family: "Oswald", "Arial";
+     letter-spacing: 0.1px;
+     padding-bottom: 4px;
+     padding-top: 40px;
+}
+
+.openproject .project_content .projectinfo .info p {
+     line-height: 16px;
+     padding: 2px 0pt 10px;
+     color: #A3ABAD;
+     font-family: "Helvetica Neue", "Arial";
+}
+
+.pretty .openproject{
+	margin-top: -20px;
+}
+
+.projects ul.list{
+	width: auto;
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+}
+
+.projects .list .proj-item {
+	width: 230px ;
+	height: 230px;
+	margin: 0 ;
+	overflow: hidden;
+	display: inline-block; 
+}
+
+.projects .list .two_cols{
+	width: 462px;
+	height: 345px;
+}
+
+.projects .list .two_cols .proj-img-2col{
+	width: 430px;
+	height: 240px;
+}
+
+.projects .list .two_cols .details-2col{
+	width: 410px;
+	margin-top: 250px;
+	left: -8px;
+}
+
+.projects .list .two_cols .details-2col .title{
+	float: none !important;
+	left: 0 !important;
+}
+
+.projects .list .three_cols {
+	width: 306px ;
+	height: 300px ;
+}
+
+.projects .list .three_cols .proj-img-3col{
+	width: 280px;
+	height: 200px;
+}
+
+.projects .list .three_cols .details-3col{
+	width: 260px;
+	margin-top: 205px;
+	left: -8px;
+}
+	
+.projects .list .three_cols .details-3col .title{
+	float: none !important;
+	left: 0 !important;
+}
+	
+.projects .list .img-loader-container{
+	position: absolute;
+	top: 0;
+}
+
+.projects .list .details-4col{
+	position: relative;
+	left: -8px;
+}
+
+.projectinfo .cat{
+	color: #aca9a9;
+	font-size: 11px;
+	font-weight: 100;
+	font-family: "Helvetica", "Arial";
+	line-height: 13px;
+	margin-top: 0;
+	text-align: right;
+}
+.projectinfo .category{
+	color: #23acb9;
+	font-size: 14px;
+	font-family: "Helvetica", "Arial";
+	text-align: right;
+}
