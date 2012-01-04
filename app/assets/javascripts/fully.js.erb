@@ -1,12 +1,12 @@
 //pre-load loading.gif
 loading_gif = new Image(24,24);
-loading_gif.src = "img/ajax-loader.gif";
+loading_gif.src = "<%= asset_path 'ajax-loader.gif' %>  ";
 
 fullscreen_icon = new Image(24,36);
-fullscreen_icon.src = "img/fullscreen.png";
+fullscreen_icon.src = "<%= asset_path 'fullscreen.png' %>  ";
 
 moreinfo_icon = new Image(24,36);
-moreinfo_icon.src = "img/moreinfo.png";
+moreinfo_icon.src = "<%= asset_path 'moreinfo.png' %> ";
 
 //detect scrollTop
 function getScrollTop(){
@@ -995,7 +995,8 @@ function hover_projects(){
 			'margin': $(this).css('padding-left')
 		});
 		//add fullscreen icon
-		$(this).parent().append('<div class="fullscreen-icon"><a href="#" onclick="return false;"><img src="img/fullscreen.png" alt=""></a></div>');
+		<% fullscreen_path = asset_path 'fullscreen.png' %>
+		$(this).parent().append('<div class="fullscreen-icon"><a href="#" onclick="return false;"><img src="<%= fullscreen_path %>" alt=""></a></div>');
 		$(this).parent().children('.fullscreen-icon').css({
 			'position': 'absolute',
 			'bottom': 3,
@@ -1334,38 +1335,38 @@ function hover_projects(){
 	}
 	
 	//initialize prettyPhoto home_rows
-	$('.home_rows, .magnify').find("a[rel^='prettyPhoto']").prettyPhoto({autoplay_slideshow:false, deeplinking: false, markup: '<div class="pp_pic_holder"> \
-      <div class="ppt">&nbsp;</div> \
-      <div class="pp_top"> \
-       <div class="pp_left"></div> \
-       <div class="pp_middle"></div> \
-       <div class="pp_right"></div> \
-      </div> \
-      <div class="pp_content_container"> \
-       <div class="pp_left"> \
-       <div class="pp_right"> \
-        <div class="pp_content"> \
-         <div class="pp_loaderIcon"></div> \
-         <div class="pp_fade"> \
-          <a href="#" class="pp_expand" title="Expand the image">Expand</a> \
-          <div class="pp_hoverContainer"> \
-           <a class="pp_next" href="#">next</a> \
-           <a class="pp_previous" href="#">previous</a> \
-          </div> \
-          <div id="pp_full_res"></div> \
-          <div class="pp_details"> \
-           <a class="pp_close" href="#">Close</a> \
-          </div> \
-         </div> \
-        </div> \
-       </div> \
-       </div> \
-      </div> \
-      <div class="pp_bottom"> \
-       <div class="pp_left"></div> \
-       <div class="pp_middle"></div> \
-       <div class="pp_right"></div> \
-      </div> \
-     </div> \
-     <div class="pp_overlay"></div>'});
+  // $('.home_rows, .magnify').find("a[rel^='prettyPhoto']").prettyPhoto({autoplay_slideshow:false, deeplinking: false, markup: '<div class="pp_pic_holder"> \
+  //       <div class="ppt">&nbsp;</div> \
+  //       <div class="pp_top"> \
+  //        <div class="pp_left"></div> \
+  //        <div class="pp_middle"></div> \
+  //        <div class="pp_right"></div> \
+  //       </div> \
+  //       <div class="pp_content_container"> \
+  //        <div class="pp_left"> \
+  //        <div class="pp_right"> \
+  //         <div class="pp_content"> \
+  //          <div class="pp_loaderIcon"></div> \
+  //          <div class="pp_fade"> \
+  //           <a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+  //           <div class="pp_hoverContainer"> \
+  //            <a class="pp_next" href="#">next</a> \
+  //            <a class="pp_previous" href="#">previous</a> \
+  //           </div> \
+  //           <div id="pp_full_res"></div> \
+  //           <div class="pp_details"> \
+  //            <a class="pp_close" href="#">Close</a> \
+  //           </div> \
+  //          </div> \
+  //         </div> \
+  //        </div> \
+  //        </div> \
+  //       </div> \
+  //       <div class="pp_bottom"> \
+  //        <div class="pp_left"></div> \
+  //        <div class="pp_middle"></div> \
+  //        <div class="pp_right"></div> \
+  //       </div> \
+  //      </div> \
+  //      <div class="pp_overlay"></div>'});
 }

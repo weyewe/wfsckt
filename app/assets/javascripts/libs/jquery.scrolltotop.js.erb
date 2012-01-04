@@ -6,10 +6,11 @@
 $(document).ready(function() {
 var templatepath = $("#templatedirectory").html();
 var scrolltotop={
+  <% gotop_path = asset_path "gotop.png" %>
 	//startline: Integer. Number of pixels from top of doc scrollbar is scrolled before showing control
 	//scrollto: Keyword (Integer, or "Scroll_to_Element_ID"). How far to scroll document up when control is clicked on (0=top).
 	setting: {startline:100, scrollto: 0, scrollduration:1000, fadeduration:[700, 500]},
-	controlHTML: '<img src="img/gotop.png" style="width:41px; height:43px; margin-right: 20px;" />', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
+	controlHTML: '<img src="<%= gotop_path %>" style="width:41px; height:43px; margin-right: 20px;" />', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
 	controlattrs: {offsetx:15, offsety:12}, //offset of control relative to right/ bottom of window corner
 	anchorkeyword: '#top', //Enter href value of HTML anchors on the page that should also act as "Scroll Up" links
 
